@@ -1,0 +1,43 @@
+{
+    "name": "okatsuralau/laravel-translator",
+    "description": "Simple laravel translator",
+    "license": "license",
+    "authors": [
+        {
+            "name": "Gabriel Lau",
+            "email": "contato@gabriellau.dev",
+            "homepage": "https://gabriellau.dev"
+        }
+    ],
+    "homepage": "https://github.com/okatsuralau/laravel-translator",
+    "keywords": ["Laravel", "laravel-translator"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Okatsuralau\\LaravelTranslator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Okatsuralau\\LaravelTranslator\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Okatsuralau\\LaravelTranslator\\LaravelTranslatorServiceProvider"
+            ],
+            "aliases": {
+                "LaravelTranslator": "Okatsuralau\\LaravelTranslator\\Facades\\LaravelTranslator"
+            }
+        }
+    }
+}
