@@ -39,5 +39,7 @@
                 "LaravelTranslator": "Okatsuralau\\LaravelTranslator\\Facades\\LaravelTranslator"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
